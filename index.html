@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Zhihui Song 的个人主页。在代码中探索，用工具连接想法与日常。了解我的项目，或与我取得联系。">
+  <meta property="og:title" content="Zhihui Song · 个人主页">
+  <meta property="og:description" content="在代码中探索，用工具连接想法与日常。">
+  <meta property="og:type" content="website">
+  <title>Zhihui Song · 个人主页</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Zhihui Song 首页"><span class="brand-mark">s.</span><span>Zhihui Song<span class="brand-caption">PERSONAL SPACE</span></span></a>
+    <nav aria-label="主导航"><a href="#about">关于</a><a href="#projects">项目</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> HELLO, WORLD. <span class="location">QINGDAO, CHINA</span></p>
+        <h1 id="hero-title">保持好奇，<br>把想法变成<span class="serif-accent">可能。</span></h1>
+        <p class="intro">你好，我是 <strong>Zhihui Song</strong>。<br>欢迎来到我的个人空间，在这里分享代码、工具，<br class="desktop-break">以及探索技术的点滴。</p>
+        <div class="hero-actions"><a class="button button-dark" href="#projects">探索我的项目 <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/songzhihui" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-top">IDEAS IN MOTION</span>
+        <svg class="orbit-art" viewBox="0 0 460 460" fill="none">
+          <defs><linearGradient id="orb" x1="130" y1="90" x2="350" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#cedbb5"/><stop offset="1" stop-color="#729172"/></linearGradient><pattern id="grid" width="23" height="23" patternUnits="userSpaceOnUse"><path d="M 23 0 H 0 V 23" stroke="#c4c8b8" stroke-width=".6"/></pattern></defs>
+          <circle cx="230" cy="230" r="205" fill="url(#grid)" opacity=".35"/>
+          <circle cx="230" cy="230" r="173" stroke="#c2c8b6" stroke-dasharray="3 7"/>
+          <path d="M230 14V446M14 230H446" stroke="#b9c1ac" stroke-width=".7"/>
+          <circle cx="230" cy="230" r="132" fill="url(#orb)"/>
+          <ellipse cx="230" cy="230" rx="189" ry="59" transform="rotate(-37 230 230)" stroke="#3f5946" stroke-width="1.3"/>
+          <ellipse cx="230" cy="230" rx="189" ry="59" transform="rotate(37 230 230)" stroke="#f6f5ef" stroke-width="1.3"/>
+          <path d="M273 166c-13-12-29-17-48-17-29 0-49 17-49 40 0 22 18 34 48 41l12 3c22 5 33 14 33 28 0 18-16 30-39 30-21 0-40-8-55-23" stroke="#f6f5ef" stroke-width="15" stroke-linecap="round"/>
+          <circle cx="78" cy="343" r="8" fill="#294d3a"/><circle cx="382" cy="119" r="5" fill="#c3cb83"/>
+          <path d="M379 343v18m-9-9h18" stroke="#3f5946" stroke-width="1.5"/>
+        </svg>
+        <div class="art-bottom"><span>EXPLORE · BUILD · REPEAT</span><span>01 / ∞</span></div>
+      </div>
+      <div class="hero-footer"><span>一点好奇心，一些新可能。</span><a href="#about">向下探索 <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="about" class="about wrap section" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / ABOUT</span><h2 id="about-title">技术，连接想法与日常。</h2></div>
+      <div class="about-copy"><p>我喜欢从实际问题出发，寻找更顺手的工具，也在开源项目里发现新的思路。从 Python 桌面工具到 Rust PDF 应用，每一次探索，都是理解技术的另一种方式。</p><p class="muted">这里是一份持续生长的记录。你可以看看我的项目，也欢迎通过邮件交流想法。</p><div class="interest-tags"><span>Python</span><span>开发工具</span><span>开源探索</span></div></div>
+    </section>
+
+    <section id="projects" class="projects wrap section" aria-labelledby="projects-title">
+      <div class="section-heading"><div><span class="section-kicker">02 / SELECTED PROJECTS</span><h2 id="projects-title">代码里的小小探索<span class="green">.</span></h2></div><a class="text-link" href="https://github.com/songzhihui?tab=repositories" target="_blank" rel="noopener noreferrer">全部仓库 <span aria-hidden="true">↗</span></a></div>
+      <a class="featured project-link" href="https://github.com/songzhihui/chromedriver_checker" target="_blank" rel="noopener noreferrer">
+        <div class="featured-copy"><div class="project-meta"><span class="pill">个人项目</span><span>PYTHON / PYQT6</span></div><h3>ChromeDriver<br>自动更新工具</h3><p>让驱动版本管理更省心。检测本地 Chrome 版本，检查并下载 ChromeDriver，通过桌面界面完成更新操作。</p><span class="project-cta">在 GitHub 查看项目 <span aria-hidden="true">↗</span></span></div>
+        <div class="tool-visual" aria-hidden="true"><div class="mock-window"><div class="window-bar"><i></i><i></i><i></i><span>driver / toolkit</span></div><div class="terminal-body"><span class="terminal-comment"># keep your tools in sync</span><div><span class="prompt">❯</span> chromedriver_checker</div><div class="terminal-rule"></div><div class="terminal-row"><span>Chrome</span><span class="terminal-badge">检测版本</span></div><div class="terminal-row"><span>ChromeDriver</span><span class="terminal-badge">检查更新</span></div><div class="mock-button">READY TO UPDATE <span>↗</span></div></div></div><span class="visual-caption">LESS REPETITION. MORE CREATION.</span></div>
+      </a>
+      <div class="project-grid">
+        <a class="project-card project-link" href="https://github.com/songzhihui/pdfcraft" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 开源探索</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon" aria-hidden="true">{ p }</div><h3>PdfCraft</h3><p>使用纯 Rust 编写的开源 PDF 阅读与编辑应用，探索文档处理的更多可能。</p><div class="card-bottom"><span><i class="language-dot rust"></i>Rust</span><span>上游：storytold/pdfcraft</span></div></a>
+        <a class="project-card project-link" href="https://github.com/songzhihui/chan.py" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 开源探索</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon chart-icon" aria-hidden="true">▁ ▃ ▂ ▅ ▇</div><h3>chan.py</h3><p>开放式的缠论 Python 实现框架，涵盖多级别 K 线分析、可视化与策略开发。</p><div class="card-bottom"><span><i class="language-dot python"></i>Python</span><span>分析 / 可视化</span></div></a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact wrap" aria-labelledby="contact-title"><div><span class="section-kicker">03 / SAY HELLO</span><h2 id="contact-title">有个想法？<br>一起聊聊<span class="green">。</span></h2><p>关于项目、工具，或只是打个招呼。<br>欢迎你的来信。</p></div><div class="contact-links"><a class="contact-email" href="mailto:song19891121@qq.com"><span>EMAIL ME</span><strong>song19891121@qq.com</strong><span class="contact-arrow" aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/songzhihui" target="_blank" rel="noopener noreferrer"><span>也可以在 GitHub 找到我</span><span>@songzhihui ↗</span></a></div></section>
+  </main>
+  <footer class="footer wrap"><span>© <span id="year">2026</span> Zhihui Song</span><span class="footer-note">MADE WITH CURIOSITY <span class="green">✳</span></span><a href="#">回到顶部 ↑</a></footer>
+</body>
+</html>
