@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5ef">
-  <meta name="description" content="Zhihui Song 的个人主页。在代码中探索，用工具连接想法与日常。了解我的项目，或与我取得联系。">
+  <meta name="description" content="Zhihui Song 的个人主页。Python 与 Rust 开源贡献记录：PdfCraft 中文字体渲染、chan.py 扫描器改进，以及个人开发工具。">
   <meta property="og:title" content="Zhihui Song · 个人主页">
-  <meta property="og:description" content="在代码中探索，用工具连接想法与日常。">
+  <meta property="og:description" content="从实用工具到开源贡献，记录 Python、Rust 与 PDF 文档处理的探索。">
   <meta property="og:type" content="website">
   <title>Zhihui Song · 个人主页</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="Zhihui Song 首页"><span class="brand-mark">s.</span><span>Zhihui Song<span class="brand-caption">PERSONAL SPACE</span></span></a>
-    <nav aria-label="主导航"><a href="#about">关于</a><a href="#projects">项目</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="主导航"><a href="#about">关于</a><a href="#activity">贡献</a><a href="#projects">项目</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a></nav>
   </header>
 
   <main id="main">
@@ -25,7 +25,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> HELLO, WORLD. <span class="location">QINGDAO, CHINA</span></p>
         <h1 id="hero-title">保持好奇，<br>把想法变成<span class="serif-accent">可能。</span></h1>
-        <p class="intro">你好，我是 <strong>Zhihui Song</strong>。<br>欢迎来到我的个人空间，在这里分享代码、工具，<br class="desktop-break">以及探索技术的点滴。</p>
+        <p class="intro">你好，我是 <strong>Zhihui Song</strong>。<br>欢迎来到我的个人空间，在这里分享实用工具，<br class="desktop-break">也记录参与开源项目的修复与改进。</p>
         <div class="hero-actions"><a class="button button-dark" href="#projects">探索我的项目 <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/songzhihui" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -49,23 +49,36 @@
 
     <section id="about" class="about wrap section" aria-labelledby="about-title">
       <div class="section-label"><span>01 / ABOUT</span><h2 id="about-title">技术，连接想法与日常。</h2></div>
-      <div class="about-copy"><p>我喜欢从实际问题出发，寻找更顺手的工具，也在开源项目里发现新的思路。从 Python 桌面工具到 Rust PDF 应用，每一次探索，都是理解技术的另一种方式。</p><p class="muted">这里是一份持续生长的记录。你可以看看我的项目，也欢迎通过邮件交流想法。</p><div class="interest-tags"><span>Python</span><span>开发工具</span><span>开源探索</span></div></div>
+      <div class="about-copy"><p>我喜欢从实际问题出发，寻找更顺手的工具，也在开源项目里发现新的思路。从 Python 桌面工具到 Rust PDF 应用，我关注实际使用中的问题，也参与修复、补充回归测试，并跟进审查与合并。</p><p class="muted">这里是一份持续生长的记录。你可以看看我的项目，也欢迎通过邮件交流想法。</p><div class="interest-tags"><span>Python</span><span>Rust</span><span>PDF 文档处理</span><span>开源贡献</span></div></div>
+    </section>
+
+    <section id="activity" class="activity wrap section" aria-labelledby="activity-title">
+      <div class="section-heading"><div><span class="section-kicker">02 / OPEN SOURCE CONTRIBUTIONS</span><h2 id="activity-title">最近，把问题变成改进<span class="green">.</span></h2></div><a class="text-link" href="https://github.com/issues?q=is%3Apr%20author%3Asongzhihui%20sort%3Aupdated-desc" target="_blank" rel="noopener noreferrer">全部贡献 <span aria-hidden="true">↗</span></a></div>
+      <p class="activity-intro">从中文 PDF 的显示问题，到桌面扫描器的日常体验。这里记录近期提交与已合并的改进。</p>
+      <div class="activity-list">
+        <article class="activity-item"><div class="activity-meta"><span class="contribution-status merged">已合并</span><time datetime="2026-10-31T00:45:09Z">2026.10.31</time></div><div><p class="activity-repo">RUST · STORYTOLD / PDFCRAFT</p><h3><a href="https://github.com/storytold/pdfcraft/pull/4172" target="_blank" rel="noopener noreferrer">让未嵌入 CJK 字体的 PDF 正常显示 <span aria-hidden="true">↗</span></a></h3><p>延续 #1567 的工作，为桌面查看器及屏幕预览接入本机兼容字体，覆盖 Windows GBK PDF 与宋、黑、楷、仿宋及方正别名。补充字形像素对照测试，并保留原作者提交历史。</p><p class="activity-note">#4172 · 回退仅用于屏幕显示，需要安装兼容字体；不改变导出或打印策略。</p></div></article>
+        <article class="activity-item"><div class="activity-meta"><span class="contribution-status merged">已合并</span><time datetime="2026-10-27T16:49:09Z">2026.10.28</time></div><div><p class="activity-repo">PYTHON · VESPA314 / CHAN.PY</p><h3><a href="https://github.com/Vespa314/chan.py/pull/127" target="_blank" rel="noopener noreferrer">改善 A 股扫描器界面与后台任务 <span aria-hidden="true">↗</span></a></h3><p>统一界面配色，在后台获取股票列表，处理取消扫描、连续切换股票的过期响应及窗口关闭时的线程退出，并为历史行情请求增加超时。</p><p class="activity-note">#127 · PyQt6 界面与线程生命周期</p></div></article>
+        <article class="activity-item"><div class="activity-meta"><span class="contribution-status merged">已合并</span><time datetime="2026-10-27T16:49:32Z">2026.10.28</time></div><div><p class="activity-repo">PYTHON · VESPA314 / CHAN.PY</p><h3><a href="https://github.com/Vespa314/chan.py/pull/128" target="_blank" rel="noopener noreferrer">一键复制全部买点股票代码 <span aria-hidden="true">↗</span></a></h3><p>为买点列表增加批量复制按钮，按顺序每行复制一个代码，保留前导零；空列表禁用按钮，复制后反馈数量。</p><p class="activity-note">#128 · 解决 issue #99 的批量复制需求</p></div></article>
+        <article class="activity-item"><div class="activity-meta"><span class="contribution-status reviewing">审查中</span><span>截至 2026.10.31</span></div><div><p class="activity-repo">PYTHON · VESPA314 / CHAN.PY</p><h3><a href="https://github.com/Vespa314/chan.py/pull/129" target="_blank" rel="noopener noreferrer">补齐秒级时间与期货夜盘交易日归属 <span aria-hidden="true">↗</span></a></h3><p>保留时间解析中的秒与真实午夜时间，将实际时间和交易日分开处理，支持夜盘跨日、多级 K 线对齐及交易时段映射。</p><p class="activity-note">#129 · 尚未合并；交易日由行情源或准确的交易时段表提供。</p></div></article>
+      </div>
+      <p class="activity-updated">记录更新于 <time datetime="2026-10-31">2026 年 10 月 31 日</time> · 日期按北京时间展示，最新状态以各 PR 为准。</p>
     </section>
 
     <section id="projects" class="projects wrap section" aria-labelledby="projects-title">
-      <div class="section-heading"><div><span class="section-kicker">02 / SELECTED PROJECTS</span><h2 id="projects-title">代码里的小小探索<span class="green">.</span></h2></div><a class="text-link" href="https://github.com/songzhihui?tab=repositories" target="_blank" rel="noopener noreferrer">全部仓库 <span aria-hidden="true">↗</span></a></div>
+      <div class="section-heading"><div><span class="section-kicker">03 / SELECTED PROJECTS</span><h2 id="projects-title">代码里的小小探索<span class="green">.</span></h2></div><a class="text-link" href="https://github.com/songzhihui?tab=repositories" target="_blank" rel="noopener noreferrer">全部仓库 <span aria-hidden="true">↗</span></a></div>
       <a class="featured project-link" href="https://github.com/songzhihui/chromedriver_checker" target="_blank" rel="noopener noreferrer">
         <div class="featured-copy"><div class="project-meta"><span class="pill">个人项目</span><span>PYTHON / PYQT6</span></div><h3>ChromeDriver<br>自动更新工具</h3><p>让驱动版本管理更省心。检测本地 Chrome 版本，检查并下载 ChromeDriver，通过桌面界面完成更新操作。</p><span class="project-cta">在 GitHub 查看项目 <span aria-hidden="true">↗</span></span></div>
         <div class="tool-visual" aria-hidden="true"><div class="mock-window"><div class="window-bar"><i></i><i></i><i></i><span>driver / toolkit</span></div><div class="terminal-body"><span class="terminal-comment"># keep your tools in sync</span><div><span class="prompt">❯</span> chromedriver_checker</div><div class="terminal-rule"></div><div class="terminal-row"><span>Chrome</span><span class="terminal-badge">检测版本</span></div><div class="terminal-row"><span>ChromeDriver</span><span class="terminal-badge">检查更新</span></div><div class="mock-button">READY TO UPDATE <span>↗</span></div></div></div><span class="visual-caption">LESS REPETITION. MORE CREATION.</span></div>
       </a>
       <div class="project-grid">
-        <a class="project-card project-link" href="https://github.com/songzhihui/pdfcraft" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 开源探索</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon" aria-hidden="true">{ p }</div><h3>PdfCraft</h3><p>使用纯 Rust 编写的开源 PDF 阅读与编辑应用，探索文档处理的更多可能。</p><div class="card-bottom"><span><i class="language-dot rust"></i>Rust</span><span>上游：storytold/pdfcraft</span></div></a>
-        <a class="project-card project-link" href="https://github.com/songzhihui/chan.py" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 开源探索</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon chart-icon" aria-hidden="true">▁ ▃ ▂ ▅ ▇</div><h3>chan.py</h3><p>开放式的缠论 Python 实现框架，涵盖多级别 K 线分析、可视化与策略开发。</p><div class="card-bottom"><span><i class="language-dot python"></i>Python</span><span>分析 / 可视化</span></div></a>
+        <a class="project-card project-link" href="https://github.com/storytold/pdfcraft/pull/4172" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 参与上游贡献</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon" aria-hidden="true">{ p }</div><h3>PdfCraft</h3><p>参与桌面查看器的 CJK 字体回退修复，补充 GBK 字形与字体对照验证。贡献已通过 #4172 合并至上游。</p><div class="card-bottom"><span><i class="language-dot rust"></i>Rust</span><span>上游：storytold/pdfcraft</span></div></a>
+        <a class="project-card project-link" href="https://github.com/songzhihui/chan.py" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 参与上游贡献</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon chart-icon" aria-hidden="true">▁ ▃ ▂ ▅ ▇</div><h3>chan.py</h3><p>参与 A 股扫描器 GUI、数据源与使用体验改进；近期界面线程修复及批量复制功能已合并，秒级时间支持仍在审查。</p><div class="card-bottom"><span><i class="language-dot python"></i>Python</span><span>分析 / 可视化</span></div></a>
       </div>
     </section>
 
-    <section id="contact" class="contact wrap" aria-labelledby="contact-title"><div><span class="section-kicker">03 / SAY HELLO</span><h2 id="contact-title">有个想法？<br>一起聊聊<span class="green">。</span></h2><p>关于项目、工具，或只是打个招呼。<br>欢迎你的来信。</p></div><div class="contact-links"><a class="contact-email" href="mailto:song19891121@qq.com"><span>EMAIL ME</span><strong>song19891121@qq.com</strong><span class="contact-arrow" aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/songzhihui" target="_blank" rel="noopener noreferrer"><span>也可以在 GitHub 找到我</span><span>@songzhihui ↗</span></a></div></section>
+    <section id="contact" class="contact wrap" aria-labelledby="contact-title"><div><span class="section-kicker">04 / SAY HELLO</span><h2 id="contact-title">有个想法？<br>一起聊聊<span class="green">。</span></h2><p>关于项目、工具，或只是打个招呼。<br>欢迎你的来信。</p></div><div class="contact-links"><a class="contact-email" href="mailto:song19891121@qq.com"><span>EMAIL ME</span><strong>song19891121@qq.com</strong><span class="contact-arrow" aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/songzhihui" target="_blank" rel="noopener noreferrer"><span>也可以在 GitHub 找到我</span><span>@songzhihui ↗</span></a></div></section>
   </main>
   <footer class="footer wrap"><span>© <span id="year">2026</span> Zhihui Song</span><span class="footer-note">MADE WITH CURIOSITY <span class="green">✳</span></span><a href="#">回到顶部 ↑</a></footer>
 </body>
 </html>
+
