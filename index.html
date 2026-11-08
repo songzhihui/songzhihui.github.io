@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5ef">
-  <meta name="description" content="Zhihui Song 的个人主页。Python、Rust 与 Linux 开源贡献记录：Windows PDF 打印、Omarchy 虚拟机支持、chan.py 扫描器与个人开发工具。">
+  <meta name="description" content="Zhihui Song 的个人主页。Python、Rust 与 Linux 开源贡献记录：Windows PDF 打印、Omarchy 虚拟机支持、Marks Strategy 合约筛选、chan.py 扫描器与个人开发工具。">
   <meta property="og:title" content="Zhihui Song · 个人主页">
   <meta property="og:description" content="从实用工具到开源贡献，记录 Python、Rust、PDF 文档处理与 Linux 虚拟机的探索。">
   <meta property="og:type" content="website">
@@ -77,6 +77,15 @@
         <div class="tool-visual" aria-hidden="true"><div class="mock-window"><div class="window-bar"><i></i><i></i><i></i><span>driver / toolkit</span></div><div class="terminal-body"><span class="terminal-comment"># keep your tools in sync</span><div><span class="prompt">❯</span> chromedriver_checker</div><div class="terminal-rule"></div><div class="terminal-row"><span>Chrome</span><span class="terminal-badge">检测版本</span></div><div class="terminal-row"><span>ChromeDriver</span><span class="terminal-badge">检查更新</span></div><div class="mock-button">READY TO UPDATE <span>↗</span></div></div></div><span class="visual-caption">LESS REPETITION. MORE CREATION.</span></div>
       </a>
       <div class="project-grid">
+        <article class="project-card marks-project" aria-labelledby="marks-title">
+          <div class="project-meta"><span class="pill">个人项目 · 私有仓库</span><span>PYTHON / PYQT6</span></div>
+          <div class="project-icon chart-icon" aria-hidden="true">▂ ▅ ▃ ▆ ▄</div>
+          <h3 id="marks-title">Marks Strategy</h3>
+          <p>将 Howard Marks 的周期与风险控制思想转化为合约筛选工具。分别评估加密货币与股票合约的市场温度，结合五组因子评分，生成候选、观察及回避名单。</p>
+          <p>支持桌面界面与命令行，导出 Markdown 报告和 CSV 明细。仅读取公开行情，不自动交易；策略尚未回测，结果用于研究参考。</p>
+          <div class="marks-links"><a class="text-link" href="https://github.com/songzhihui/marks_strategy" target="_blank" rel="noopener noreferrer">项目仓库（需访问权限） <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:song19891121@qq.com?subject=Marks%20Strategy">交流项目 <span aria-hidden="true">↗</span></a></div>
+          <div class="card-bottom"><span><i class="language-dot python"></i>Python · ccxt · PyQt6</span><span>量化研究 / 风险筛选</span></div>
+        </article>
         <a class="project-card project-link" href="https://github.com/storytold/pdfcraft/pull/4172" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 参与上游贡献</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon" aria-hidden="true">{ p }</div><h3>PdfCraft</h3><p>CJK 字体回退修复已通过 #4172 合并；Windows PDF 打印的文件流加载与依赖集成也已通过 #6514 合并至上游。</p><div class="card-bottom"><span><i class="language-dot rust"></i>Rust</span><span>上游：storytold/pdfcraft</span></div></a>
         <a class="project-card project-link" href="https://github.com/songzhihui/chan.py" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 参与上游贡献</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon chart-icon" aria-hidden="true">▁ ▃ ▂ ▅ ▇</div><h3>chan.py</h3><p>参与 A 股扫描器 GUI、数据源与使用体验改进；近期界面线程修复及批量复制功能已合并，秒级时间支持仍在审查。</p><div class="card-bottom"><span><i class="language-dot python"></i>Python</span><span>分析 / 可视化</span></div></a>
         <a class="project-card project-link" href="https://github.com/songzhihui/omarchy" target="_blank" rel="noopener noreferrer"><div class="project-meta"><span class="pill">Fork · 参与上游贡献</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="project-icon" aria-hidden="true">&gt;_</div><h3>Omarchy</h3><p>围绕 VirtualBox 来宾服务、恢复文档、安装器语言回退及 Windows 虚拟机版本跟进提交改进，相关上游提案尚未合并。</p><div class="card-bottom"><span>Shell / Python</span><span>Linux / 虚拟机</span></div></a>
