@@ -26,6 +26,8 @@ GitHub Pages 从 `main` 分支根目录发布，无需安装依赖或构建。`.
 
 ## 最近核对
 
-2026-11-08 使用 gh 核对 songzhihui 的公开仓库与上游 PR：9 个公开仓库（2 个个人仓库、7 个 Fork）；10 个未合并的上游 PR（含 1 个草稿）。首页新增 Windows PDF 打印链路、打印测试与 CI、Omarchy VirtualBox 支持、安装器语言回退及稳定版跟进记录。
+2026-11-09 使用 gh 核对 songzhihui 的公开仓库与上游 PR：9 个公开仓库（2 个个人仓库、7 个 Fork）；7 个未合并的上游 PR（含 1 个草稿）。首页新增 Windows PDF 打印链路、打印测试与 CI、Omarchy VirtualBox 支持、安装器语言回退及稳定版跟进记录。
 
 统计为当日快照；Fork 的推送时间不作为上游已合并的依据。每项贡献链接到原始 PR，已合并记录保留实际合并日期。
+
+北京时间 2026-11-09，Windows PDF 打印链路的 winprint.rs #15、craft-libs #636、PdfCraft #6514 均已合并至上游；首页同步更新贡献状态和 PdfCraft 项目介绍。
